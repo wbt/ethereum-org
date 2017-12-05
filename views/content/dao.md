@@ -33,7 +33,7 @@ Open the wallet (if you are only testing, go to the menu develop > network > tes
 ![DAO Setup](/images/tutorial/dao-setup.png)
 
 
-You can change these parameters later, choose a name, 5 minutes for debate time and leave the remaining of them at 0. A little lower on the page you'll see an estimate cost of your contract in ether. You can try lowering the price if you want to save, but that might mean having to wait longer for your contract to be created. Click **Deploy**, type your password and wait.
+You can change these parameters later. As a start, you can choose 5 minutes for debate time and leave the remaining parameters at 0. A little lower on the page, you'll see an estimate of the cost for deploying your contract in ether. You can try lowering the price if you want to save, but that might mean having to wait longer for your contract to be created. Click **Deploy**, type your password and wait.
 
 In a few seconds you'll be taken to the dashboard, scroll down and you'll be able to see your transaction being created. In under a minute you'll see the transaction successful and a new unique icon will have been created. Click the contract's name to see it (you can get to it at any time on the *Contracts* tab).
 
@@ -54,7 +54,7 @@ On the other computer, go into the *Contracts* tab and then click on **watch con
 
 On the **"read from contract"** you can see all the functions you can execute for free on the contract, as they are just reading information from the blockchain. Here you can see, for instance, the current "owner" of the contract (that should be the account that uploaded the contract).
 
-On the **"Write to contract"** you have a list of all the functions that will attempt to do some computation that saves data to the blockchain, and therefore will cost ether. Select "newProposal" and it will show all the options for that function.
+On the **"Write to contract"** you have a list of all the functions that will attempt to do some computation that saves data to the blockchain, and therefore will cost ether. Select "New Proposal" and it will show all the options for that function.
 
 Before interacting with the contract, you'll need to add new members so they can vote. On the **"select function"** picker, choose **"Add Member"**. Add the address of the person you want to make a member(to remove a member, choose **"Remove Member"**). On **"execute from"** make sure that you have the same account that is set as the owner as this is an action only the main administrator can execute. Press **execute** and wait a few seconds for the next block to go through with your change.
 
@@ -64,7 +64,7 @@ Also, if you want the contract to have any money of its own, you need to deposit
 
 #### Add a simple proposal: send ether
 
-Now let's add the first proposal to the contract. On the function picker, select **New proposal**.
+Now let's add the first proposal to the contract. On the function picker, select **New Proposal**.
 
 For "beneficiary" add the address of someone you want to send ether to, then put how many ethers you want on the "etherAmount" (must be an integer) and finally some text describing the reason you want to do this. Leave transactionByteCode blank for now. Click execute and type your password. After a few seconds the numProposals will increase to 1 and the first proposal, number 0, will appear on the left column. As you add more proposals, you can see any of them by simply putting the proposal number on the "proposals" field and you can read all about it.
 
